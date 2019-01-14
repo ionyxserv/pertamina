@@ -29,7 +29,7 @@ export default {
     },
     {
       name: 'MyAdmin',
-      url: '/myadmin',
+      url: '/pages',
       icon: 'icon-puzzle',
       children: [
         {
