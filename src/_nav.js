@@ -11,12 +11,47 @@ export default {
     },
     {
       title: true,
-      name: 'Theme',
+      name: 'Employee',
+      wrapper: {
+        element: '',
+        attributes: {}
+      },
+      class: ''
+    },
+    {
+      title: true,
+      name: 'Admin',
       wrapper: {            // optional wrapper object
         element: '',        // required valid HTML5 element tag
         attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
       },
       class: ''             // optional class names space delimited list for title item ex: "text-center"
+    },
+    {
+      name: 'MyAdmin',
+      url: '/pages',
+      icon: 'icon-puzzle',
+      children: [
+        {
+          name: 'Employee',
+          url: '/employee',
+          icon: 'icon-puzzle',
+        },
+        {
+          name: 'Cards',
+          url: '/base/cards',
+          icon: 'icon-puzzle',
+        },
+      ],
+    },
+    {
+      title: true,
+      name: 'Super-user',
+      wrapper: {
+        element: '',
+        attributes: {}
+      },
+      class: ''
     },
     {
       name: 'Colors',
